@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<!DOCTYPE sect1
+[
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" 'http://www.crifan.com/files/res/docbook/entity/crl.ent'>
+%crl_ent;
+
+]>
+
+<sect1 
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    
+    xml:id="enc_ascii">
+<title>只支持基本的拉丁字符的字符编码：ASCII</title>
+
+<sect2 xml:id="ascii_history"><title>ASCII的由来</title>
+    <para>计算机刚出现的时候，虽然是美国人发明的，但是也要面对一个问题，即如何将对应的计算机中的数值，转化为对应的字母，而显示出来，即采用什么样的规则，而当时，各个厂家或公司都有自己的做法，也就是说，编码规则没有统一。</para>
+    <para>但是相对来说，得到大家认可的有，IBM的EBCDIC和此处要谈的ASCII。</para>
+    <para>其中EBCDIC现在基本没人再用，而大家统一都用ASCII了。</para>
+    <para>ASCII，即American Standard Code for Information Interchange，美国信息交换标准代码。</para>
+    <para>单独看名字，就是知道，这字符编码是设计给美国人用的。</para>
+    <para>那是因为，计算机是美国人所发明和使用的，所以计算机的早期，所设计编码标准，自然需要先为英文字符来设计和考虑，所以此最早的字符编码ASCII可以显示常见的英文字符，也可以这么说，也只能显示基本的英文字符。</para>
+    <para>由于ASCII编码中，不包括其他欧洲的很多国家的衍生的拉丁字母的那些字符，更不包含亚洲，比如中国的中文字符，因此才会有后面所提到的各种其他字符集，为的就是可以让计算机显示出自己国家的字符。</para>
+</sect2>
+
+<sect2 xml:id="ascii_enc_rule"><title>ASCII编码规则</title>
+    <para>ASCII的编码规则，由于最初只是为英文字母所考虑的，而英文只有26个字母，以及加上其他大小写字母，常见的字符，常见数字等，所有的加起来，也就几十个，而一个字节8位中前7位的理论上可以表示2<superscript>7</superscript>=128个字符，所以对于设计出来的编码规则来说，只需要用一个字节来表示，就足够了。</para>
+    <para>即ASCII编码规则中规定，用单个字节共8位来表示字符，其中最高位为0，其他7位所对于的每一个值，映射到某个特定的字符，这样就形成了ASCII编码。</para>
+    <para>ASCII共包含了2<superscript>7</superscript>=128个字符。</para>
+    <para>其中包括33个不可显示的字符和95个可显示的字符。</para>
+    <para>而对于ASCII编码规则，简单说就是：</para>
+    <para><emphasis>7位的字符编码，即每个字节的最高位第8位为0，其余7位的某个值对应着某个字符。</emphasis></para>
+    <para><emphasis>ASCII字符集共2<superscript>7</superscript>=128个字符 = 33个控制字符 + 95个可见字符。</emphasis></para>
+    <tip xml:id="tp.ascii_visiable_non_visiable"><title>>ASCII中的可显示的字符和不可显示字符</title>
+        <para>ASCII中可显示的字符，也叫可打印printable字符；</para>
+        <para>而ASCII中的值为0 – 31的那些字符，叫做不可显示的字符，也叫不可见字符，不可打印（non-printable）字符，由于其字符的作用是起一定的控制作用，所以常称为控制字符（control character），即不同的字符实现不同的功能，因此又称为功能字符（function code，function character）。</para>
+        <para>即ASCII字符集中：</para>
+        <para><emphasis>不可见字符</emphasis></para>
+        <para><emphasis>=不可打印（non-printable）字符</emphasis></para>
+        <para><emphasis>=控制字符（control character）</emphasis></para>
+        <para><emphasis>=功能字符（function code，function character）</emphasis></para>
+        <para>对于ASCII中的控制字符，都包括哪些，以及每个字符的详细含义，<xref linkend="ascii_ctrl_char" />中会有详细介绍。</para>
+    </tip>
+    
+    <sect3 xml:id="ascii_ctrl_char"><title>ASCII字符集中的功能/控制字符</title>
+        <sect4 xml:id="what_is_function_code"><title>什么是Function Code功能码或 Function Character功能字符</title>
+            <para>ASCII字符集，大家都知道吧，最基本的包含了128个字符。其中前32个，0-31，即0x00-0x1F，都是不可见字符。这些字符，就叫做控制字符。</para>
+            <para>这些字符没法打印出来，但是每个字符，都对应着一个特殊的控制功能的字符，简称功能字符或功能码Function Code。</para>
+            <para>简言之：ASCII中前32个字符，统称为Function Code功能字符。</para>
+            <para>此外，由于ASCII中的127对应的是Delete，也是不可见的，所以，此处根据笔者的理解，也可以归为Function Code。</para>
+            <para>此类字符，对应不同的“功能”，起到一定的“控制作用”，所以，称为控制字符。</para>
+            <para>关于每个控制字符的控制功能缩写，参见<xref linkend="tbl.ascii_ctrl" /></para>
+            <table xml:id="tbl.ascii_ctrl"><title>ASCII中的控制字符</title>
+                <tgroup cols="6">
+                    <colspec colnum="1" colname="col1" colwidth="1*" />
+                    <colspec colnum="2" colname="col2" colwidth="1*" />
+                    <colspec colnum="3" colname="col3" colwidth="1*" />
+                    <colspec colnum="4" colname="col4" colwidth="1*" />
+                    <colspec colnum="5" colname="col5" colwidth="4*" />
+                    <colspec colnum="6" colname="col6" colwidth="1*" />
+                    
+                    <thead>
+                        <row><entry>十进制</entry><entry>十六进制</entry><entry>控制字符</entry><entry>转义字符<co id="co.escape_char" linkends="co.note.escape_char" /></entry><entry>说明</entry><entry>Ctrl + 下列字母<co id="co.ctrl_plus_char" linkends="co.note.ctrl_plus_char" /></entry></row>
+                    </thead>
+                    
+                    <tbody>
+                        <row><entry>0</entry><entry>00</entry><entry>NUL</entry><entry>\0</entry><entry>Null character(空字符)</entry><entry>@<co id="co.shift_number" linkends="co.note.shift_number" /></entry></row>
+                        <row><entry>1</entry><entry>01</entry><entry>SOH</entry><entry></entry><entry>Start of Header(标题开始)</entry><entry>A</entry></row>
+                        <row><entry>2</entry><entry>02</entry><entry>STX</entry><entry></entry><entry>Start of Text(正文开始)</entry><entry>B</entry></row>
+                        <row><entry>3</entry><entry>03</entry><entry>ETX</entry><entry></entry><entry>End of Text(正文结束)</entry><entry>C</entry></row>
+                        <row><entry>4</entry><entry>04</entry><entry>EOT</entry><entry></entry><entry>End of Transmission(传输结束)</entry><entry>D</entry></row>
+                        <row><entry>5</entry><entry>05</entry><entry>ENQ</entry><entry></entry><entry>Enquiry(请求)</entry><entry>E</entry></row>
+                        <row><entry>6</entry><entry>06</entry><entry>ACK</entry><entry></entry><entry>Acknowledgment(收到通知/响应)</entry><entry>F</entry></row>
+                        <row><entry>7</entry><entry>07</entry><entry>BEL</entry><entry>\a</entry><entry>Bell(响铃) </entry><entry>G</entry></row>
+                        <row><entry>8</entry><entry>08</entry><entry>BS</entry><entry>\b</entry><entry>Backspace(退格)</entry><entry>H</entry></row>
+                        <row><entry>9</entry><entry>09</entry><entry>HT</entry><entry>\t</entry><entry>Horizontal Tab(水平制表符)</entry><entry>I</entry></row>
+                        <row><entry>10</entry><entry>0A</entry><entry>LF</entry><entry>\n</entry><entry>Line feed(换行键)</entry><entry>J</entry></row>
+                        <row><entry>11</entry><entry>0B</entry><entry>VT</entry><entry>\v</entry><entry>Vertical Tab(垂直制表符)</entry><entry>K</entry></row>
+                        <row><entry>12</entry><entry>0C</entry><entry>FF</entry><entry>\f</entry><entry>Form feed(换页键)</entry><entry>L</entry></row>
+                        <row><entry>13</entry><entry>0D</entry><entry>CR</entry><entry>\r</entry><entry>Carriage return(回车键)</entry><entry>M</entry></row>
+                        <row><entry>14</entry><entry>0E</entry><entry>SO</entry><entry></entry><entry>Shift Out(不用切换)</entry><entry>N</entry></row>
+                        <row><entry>15</entry><entry>0F</entry><entry>SI</entry><entry></entry><entry>Shift In(启用切换)</entry><entry>O</entry></row>
+                        <row><entry>16</entry><entry>10</entry><entry>DLE</entry><entry></entry><entry>Data Link Escape(数据链路转义)</entry><entry>P</entry></row>
+                        <row><entry>17</entry><entry>11</entry><entry>DC1</entry><entry></entry><entry>Device Control 1(设备控制1) /XON(Transmit On)</entry><entry>Q</entry></row>
+                        <row><entry>18</entry><entry>12</entry><entry>DC2</entry><entry></entry><entry>Device Control 2(设备控制2) </entry><entry>R</entry></row>
+                        <row><entry>19</entry><entry>13</entry><entry>DC3</entry><entry></entry><entry>Device Control 3(设备控制3) /XOFF(Transmit Off)</entry><entry>S</entry></row>
+                        <row><entry>20</entry><entry>14</entry><entry>DC4</entry><entry></entry><entry>Device Control 4(设备控制4)</entry><entry>T</entry></row>
+                        <row><entry>21</entry><entry>15</entry><entry>NAK</entry><entry></entry><entry>Negative Acknowledgement(拒绝接收/无响应)</entry><entry>U</entry></row>
+                        <row><entry>22</entry><entry>16</entry><entry>SYN</entry><entry></entry><entry>Synchronous Idle(同步空闲)</entry><entry>V</entry></row>
+                        <row><entry>23</entry><entry>17</entry><entry>ETB</entry><entry></entry><entry>End of Trans the Block(传输块结束)</entry><entry>W</entry></row>
+                        <row><entry>24</entry><entry>18</entry><entry>CAN</entry><entry></entry><entry>Cancel(取消)</entry><entry>X</entry></row>
+                        <row><entry>25</entry><entry>19</entry><entry>EM</entry><entry></entry><entry>End of Medium(已到介质末端/介质存储已满)</entry><entry>Y</entry></row>
+                        <row><entry>26</entry><entry>1A</entry><entry>SUB</entry><entry></entry><entry>Substitute(替补/替换)</entry><entry>Z</entry></row>
+                        <row><entry>27</entry><entry>1B</entry><entry>ESC</entry><entry>\e</entry><entry>Escape(溢出/逃离/取消)</entry><entry>[</entry></row>
+                        <row><entry>28</entry><entry>1C</entry><entry>FS</entry><entry></entry><entry>File Separator(文件分割符)</entry><entry>\</entry></row>
+                        <row><entry>29</entry><entry>1D</entry><entry>GS</entry><entry></entry><entry>Group Separator(分组符)</entry><entry>]</entry></row>
+                        <row><entry>30</entry><entry>1E</entry><entry>RS</entry><entry></entry><entry>Record Separator(记录分隔符)</entry><entry>^<coref linkend="co.shift_number" /></entry></row>
+                        <row><entry>31</entry><entry>1F</entry><entry>US</entry><entry></entry><entry>Unit Separator(单元分隔符)</entry><entry>_<coref linkend="co.shift_number" /></entry></row>
+                        <row><entry>32</entry><entry>20</entry><entry>SP</entry><entry></entry><entry>White space</entry><entry>[Space]<co id="co.char_blank_space" linkends="co.note.char_blank_space" /></entry></row>
+                        <row><entry>127</entry><entry>7F</entry><entry>DEL</entry><entry></entry><entry>Delete(删除)</entry><entry>?<co id="co.char_delete" linkends="co.note.char_delete" /></entry></row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <calloutlist>
+                <callout id="co.note.escape_char" arearefs="co.escape_char">
+                    <para>即在C语言中或其他地方如何表示。</para>
+                </callout>
+                <callout id="co.note.ctrl_plus_char" arearefs="co.ctrl_plus_char">
+                    <para>可以通过 “Ctrl+对应字母/按键”实现上述控制字符的输入</para>
+                    <para>下面列举一些你可能遇到的情况：</para>
+                    <itemizedlist>
+                        <listitem>用Ctrl+V输入[SYNC]</listitem>
+                        <listitem>用Ctrl+M输入[Enter]
+                            <para>当然也可以直接用Enter键，但是在Windows下面，其会发送两个字符：CR和LF</para>
+                            <para>关于CR，LF，详情参考：<link xl:href="http://www.crifan.com/detailed_carriage_return_0x0d_0x0a_cr_lf__r__n_the_context/">【详解】回车 换行 0x0D 0x0A CR LF r n的来龙去脉</link></para>
+                        </listitem>
+                        <listitem>用Ctrl+Q输入XON</listitem>
+                        <listitem>用Ctrl+S输入XOFF</listitem>
+                    </itemizedlist>
+                </callout>
+                <callout id="co.note.shift_number" arearefs="co.shift_number">
+                    <para>注意此处想要在键盘上输入这三个字符的话，是需要通过Shift加上对应字符才能输入的：</para>
+                    <itemizedlist>
+                        <listitem>@：用<emphasis>Shift + 2</emphasis>输入</listitem>
+                        <listitem>^：用<emphasis>Shift + 6</emphasis>输入</listitem>
+                        <listitem>_：用<emphasis>Shift + -</emphasis>输入</listitem>
+                    </itemizedlist>
+                </callout>
+                <callout id="co.note.char_blank_space" arearefs="co.char_blank_space">
+                    <para>32=0x20，对应的是空格（Blank Space）键。不需要加Ctrl键，即可直接通过键盘上的空格键输入。</para>
+                </callout>
+                <callout id="co.note.char_delete" arearefs="co.char_delete">
+                    <para>127=0x7F=删除（Delete）键;，除了可以用键盘上的删除键输入，也可以用'Ctrl+?'输入。</para>
+                </callout>
+            </calloutlist>
+        </sect4>
+        
+        <sect4 xml:id="ascii_function_code_meaning"><title>ASCII中的Function/Control Code功能字符的详细含义</title>
+            <sect5 xml:id="ascii_0_null"><title>0 – NUL – NULl 字符/空字符</title>
+                <para>ASCII字符集中的空字符，NULL，起初本意可以看作为NOP（中文意为空操作，就是啥都不做的意思），此位置可以忽略一个字符。</para>
+                <para>之所以有这个空字符，主要是用于计算机早期的记录信息的纸带，此处留个NUL字符，意思是先占这个位置，以待后用，比如你哪天想起来了，在这个位置在放一个别的啥字符之类的。</para>
+                <para>后来呢，NUL字符被用于C语言中，字符串的终结符，当一个字符串中间出现NUL / NULL，代码里面表现为\0，的时候，就意味着这个是一个字符串的结尾了。这样就方便按照自己需求去定义字符串，多长都行，当然只要你内存放得下，然后最后加一个\0, 即空字符，意思是当前字符串到此结束。</para>
+            </sect5>
+            
+            <sect5 xml:id="ascii_1_soh"><title>1 – SOH – Start  Of Heading 标题开始</title>
+                <para>如果信息沟通交流主要以命令和消息的形式的话，SOH就可以用于标记每个消息的开始。</para>
+                <para>1963年，最开始ASCII标准中，把此字符定义为Start of Message，后来又改为现在的Start Of Heading。</para>
+                <para>现在，这个SOH常见于主从（master-slave）模式的RS232的通信中，一个主设备，以SOH开头，和从设备进行通信。这样方便从设备在数据传输出现错误的时候，在下一次通信之前，去实现重新同步（resynchronize）。如果没有一个清晰的类似于SOH这样的标记，去标记每个命令的起始或开头的话，那么重新同步，就很难实现了。</para>
+                <para></para>
+                <para></para>
+                <para></para>
+            </sect5>
+
+            <sect5 xml:id="ascii_2_stx_3_etx"><title>2 – STX，3 – ETX</title>
+                <para><emphasis>2 – STX – Start Of Text 文本开始</emphasis></para>
+                <para><emphasis>3 – ETX – End Of Text 文本结束</emphasis></para>
+                <para>通过某种通讯协议去传输的一个数据（包），称为一帧的话，常会包含一个帧头，包含了寻址信息，即你是要发给谁，要发送到目的地是哪里，其后跟着真正要发送的数据内容。</para>
+                <para>而STX，就用于标记这个数据内容的开始。接下来是要传输的数据，最后是ETX，表明数据的结束。</para>
+                <para>其中，中间具体传输的数据内容，ASCII规范并没有去定义，其和你所用的传输协议，具体自己要传什么数据有关。</para>
+                <informaltable>
+                    <tgroup cols="5">
+                        <colspec colnum="1" colname="col1" colwidth="1*" />
+                        <colspec colnum="2" colname="col2" colwidth="1*" />
+                        <colspec colnum="3" colname="col3" colwidth="1*" />
+                        <colspec colnum="4" colname="col4" colwidth="1*" />
+                        <colspec colnum="5" colname="col5" colwidth="1*" />
+                        
+                        <tbody>
+                            <row><entry namest="col1" nameend="col2" align="center" >帧头</entry><entry namest="col3" nameend="col5" align="center" >数据或文本内容</entry></row>
+                            <row><entry>SOH（表明帧头开始）</entry><entry>......（帧头信息，比如包含了目的地址，表明你发送给谁等等）</entry><entry>STX（表明数据开始）</entry><entry>......（真正要传输的数据）</entry><entry>ETX（表明数据结束</entry></row>
+                        </tbody>
+                    </tgroup>
+                </informaltable>
+                <para>不过其中有趣的是，1963年，ASCII标准最初版本的时候，把现在的STX叫做EOA（End Of Address），ETX叫做（End Of Message）。</para>
+                <para>这是因为，最早的时候，一个消息中，总是包含一个开始符和一个终止符。现在的新的定义，使得可以去发送一个固定长度的命令，而只用一个SOH表明帧头开始即可，而不需要再加上一个命令终止符或帧头结束符。</para>
+                <para>总结一下：</para>
+                <para>一般发送一个消息，包含了一个帧头和后面真正要传的数据。</para>
+                <para>而对于帧头，属于控制类的信息，这部分之前属于命令，后面的真实要传的数据属于数据。即消息=帧头+数据。</para>
+                <para>而之前的命令都要有个开始符和结束符，这样就是：</para>
+                <para>消息</para>
+                <para>= 帧头                        + 要传的数据 </para>
+                <para>= 帧头开始+帧头信息+帧头结束 + 要传的数据</para>
+                <para>而现在新的定义，使得只需要：</para>
+                <para>消息</para>
+                <para>= 帧头 +要传的数据</para>
+                <para>= SOH（表明帧头开始）+帧头信息+ 要传的数据</para>
+                <para>= SOH（表明帧头开始）+帧头信息   + STX + 数据内容+ETX</para>
+                <para>就可以少用一个帧头结束符。</para>
+                <para>而如今，在很多协议中，也常见到，一个固定长度的帧头，后面紧接着就是数据了，而没有所谓的帧头结束符之类的东西去区分帧头和数据。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_4_eot"><title>4 – EOT – End Of Transmission 传输结束</title>
+                <para></para>
+            </sect5>
+
+            <sect5 xml:id="ascii_5_enq"><title>5 – ENQ – ENQuiry 请求</title>
+                <para></para>
+            </sect5>
+
+            <sect5 xml:id="ascii_6_ack"><title>6 – ACK – ACKnowledgment 回应/响应</title>
+                <para></para>
+            </sect5>
+
+            <sect5 xml:id="ascii_7_bel"><title>7 – BEL – [audible] BELl</title>
+                <para>在ASCII字符集中，BEL，是个比较有意思的东东。</para>
+                <para>因为其原先本意不是用来数据编码的，于此相反，ASCII中的其他字符，都是用于字符编码（即用什么字符，代表什么含义）或者起到控制设备的作用。</para>
+                <para>BEL用一个可以听得见的声音，来吸引人们的注意，其原打算即用于计算机也用于一些设备，比如打印机等。</para>
+                <para>C语言里面也支持此BEL，用a来实现这个响铃。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_8_bs"><title>8 – BS – BackSpace 退格键</title>
+                <para>退格键的功能，随着时间变化，意义也变得不同了。</para>
+                <para>起初，意思是，在打印机和电传打字机上，往回移动一格光标，以起到强调该字符的作用。</para>
+                <para>比如你想要打印一个a，然后加上退格键后，就成了aBS^。在机械类打字机上，此方法能够起到实际的强调字符的作用，但是对于后来的CTR下时期来说，就无法起到对应效果了。</para>
+                <para>而现代所用的退格键，不仅仅表示光标往回移动了一格，同时也删除了移动后该位置的字符。在C语言中，退格键可以用b表示。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_9_ht"><title>9 – HT – Horizontal Tab 水平制表符</title>
+                <para>ASCII中的HT控制符的作用是用于布局的。</para>
+                <para>其控制输出设备前进到下一个表格去处理。</para>
+                <para>而制表符Table/Tab的宽度也是灵活不固定的，只不过，多数设备上，制表符Tab的宽度都预定义为8。</para>
+                <para>水平制表符HT不仅能减少数据输入者的工作量，对于格式化好的文字来说，还能够减少存储空间，因为一个Tab键，就代替了8个空格，所以说省空间。</para>
+                <para>对于省空间的优点，我们现在来看，可能会觉得可笑，因为现在存储空间已足够大，一般来说根本不会需要去省那么点可怜的存储空间。</para>
+                <para>但是，实际上在计算机刚发明的时候，存储空间（主要指的是内存）极其有限也极其昂贵，而且像ZIP等压缩方法也还没发明呢，所以对于当时来说，对于存储空间，那是能够省一点是一点，省任何一点，都是好的，也都是不容易的，省空间就是省钱啊。</para>
+                <para>C语言中，用t表示制表符。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_10_lf"><title>10 – LF – Line Feed 换行</title>
+                <para>LF，直译为（给打印机等）喂一行，意思就是所说的，换行。</para>
+                <para>换行字符，是ASCII字符集中，被误用的字符中的其中一个。</para>
+                <para>LF的最原始的含义是，移动打印机的头到下一行。而另外一个ASCII字符，CR（Carriage Return）才是将打印机的头，移到最左边即一行的开始，行首。很多串口协议和MS-DOS及Windows操作系统，也都是这么实现的。</para>
+                <para>而于此不同，对于C语言和Unix操作系统，其重新定义了LF字符的含义为新行，即LF和CR的组合才能表达出的，回车且换行的意思。</para>
+                <para>虽然你可以争论哪种用法是错的，但是，不可否认，是从程序的角度出发，C语言和Unix对此LF的含义实现显得就很自然，而MS-DOS的实现更接近于LF的本意。</para>
+                <para>如果最开始ASCII标准中，及定义 CF也定义newline，那样意思会清楚，会更好理理解：</para>
+                <para>LF表示物理上的，设备控制方面的移动到下一行（并没有移动到行首）；</para>
+                <para>新行（newline）表示逻辑上文本分隔符，即回车换行。</para>
+                <para>不过呢，现在人们常将LF用做newline新行的功能，而大多数文本编辑软件也都可以处理单个LF或者CR/LF的组合了。</para>
+                <para>LF在C语言中，用n表示。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_11_vt"><title>11 – VT – Vertical Tab 垂直制表符</title>
+                <para>垂直制表符，类似于水平制表符Tab，目的是为了减少布局中的工作，同时也减少了格式化字符时所需要存储字符的空间。VT控制码用于跳到下一个标记行。</para>
+                <para>说实话，还真没看到有些地方需要用这个VT呢，因为一般在换行的时候，都是用LF代替VT了。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_12_ff"><title>12 – FF – Form Feed  换页</title>
+                <para>设计换页键，是用来控制打印机行为的。</para>
+                <para>当打印机收到此键码的时候，打印机移动到下一页。</para>
+                <para>不同的设备的终端对此控制码所表现的行为各不同。有些会去清除屏幕，而其他有的只是显示^L字符或者是只是新换一行而已。</para>
+                <para>Shell脚本程序Bash和Tcsh的实现方式是，把FF看作是一个清除屏幕的命令。C语言程序中用f表示FF（换页）。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_13_cr"><title>13 – CR – Carriage return 机器的滑动部分/底座 返回 -> 回车</title>
+                <para>CR回车的原意是让打印头回到左边界，并没有移动到下一行。</para>
+                <para>随着时间流逝，后来人把CR的意思弄成了Enter键，用于示意输入完毕。</para>
+                <para>在数据以屏幕显示的情况下，人们在Enter的同时，也希望把光标移动到下一行。</para>
+                <para>因此C语言和Unix操作系统，重新定义了LF的意思，使其表示为移动到下一行。当输入CR去存储数据的时候，软件也常常隐式地将其转换为LF。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_14_so_15_si"><title>14 – SO，15 – SI</title>
+                <para><emphasis>14 – SO – Shift Out 不用切换</emphasis></para>
+                <para><emphasis>15 – SI – Shift In  启用切换</emphasis></para>
+                <para>早在1960s年代，定义ASCII字符集的人，就已经懂得了，设计字符集不单单可以用于英文字符集，也要能应用于外文字符集，是很重要的。</para>
+                <para>定义Shift In 和Shift Out的含义，即考虑到了此点。</para>
+                <para>最开始，其意为在西里尔语和拉丁语之间切换。</para>
+                <para>西里尔ASCII定义中，KOI-7用到了Shift字符。拉丁语用Shift去改变打印机的字体。</para>
+                <para>在此种用途中，SO用于产生双倍宽度的字符，而用SI打印压缩的字体。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_16_dle"><title>16 – DLE – Data Link Escape 数据链路转义</title>
+                <para>有时候，我们需要在正在进行的通信过程中去发送一些控制字符。但是，总有一些情况下，这些控制字符却被看成了普通的数据流，而没有起到对应的控制效果。而ASCII标准中，定义DLE来解决这类问题。</para>
+                <para>如果数据流中检测到了DLE，数据接收端则对其后面接下来的数据流中的字符，另作处理。</para>
+                <para>而关于具体如何处理这些字符，ASCII规范中则没有具体定义，而只是弄了个DLE去打断正常数据的处理，告诉接下来的数据，要特殊对待。</para>
+                <para>根据Modem中的Hayes通信协议DLE定义为“无声+++无声”。</para>
+                <para>以我的观点，这样可能会更好：如果Hayes协议没有把DLE处理为嵌入通讯的无声状态，那样就符合现存的标准了。</para>
+                <para>然而Hayes的开发者却觉得+++用的频率要远高于原始的DLE，所以才这么定义了。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_17_dc1"><title>17 – DC1 – Device Control 1 / XON – Transmission on </title>
+                <para>这个ASCII控制字符尽管原先定义为DC1， 但是现在常表示为XON，用于串行通信中的软件流控制。</para>
+                <para>其主要作用为，在通信被控制码XOFF中断之后，重新开始信息传输。</para>
+                <para>用过串行终端的人应该还记得，当有时候数据出错了，按Ctrl+Q（等价于XON）有时候可以起到重新传输的效果。</para>
+                <para>这是因为，此Ctrl+Q键盘序列实际上就是产生XON控制码，其可以将那些由于终端或者主机方面，由于偶尔出现的错误的XOFF控制码而中断的通信解锁，使其正常通信。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_18_dc2"><title>18 – DC2 – Device Control 2</title>
+                <para></para>
+            </sect5>
+
+            <sect5 xml:id="ascii_19_dc3"><title>19 – DC3 – Device Control 3 / XOFF – Transmission off 传输中断</title>
+                <para></para>
+            </sect5>
+
+            <sect5 xml:id="ascii_20_dc4"><title>20 – DC4 – Device Control 4</title>
+                <para></para>
+            </sect5>
+
+            <sect5 xml:id="ascii_21_nak"><title>21 – NAK – Negative AcKnowledgment 负面响应-&gt; 无响应, 非正常响应</title>
+                <para></para>
+            </sect5>
+
+            <sect5 xml:id="ascii_22_syn"><title>22 – SYN – SYNchronous idle</title>
+                <para></para>
+            </sect5>
+
+            <sect5 xml:id="ascii_23_etb"><title>23 – ETB – End of Transmission Block 块传输中止</title>
+                <para></para>
+            </sect5>
+
+            <sect5 xml:id="ascii_24_can"><title>24 – CAN – CANcel 取消</title>
+                <para></para>
+            </sect5>
+
+            <sect5 xml:id="ascii_25_em"><title>25 – EM – End of Medium  已到介质末端，介质存储已满</title>
+                <para>EM用于，当数据存储到达串行存储介质末尾的时候，就像磁带或磁头滚动到介质末尾一样。其用于表述数据的逻辑终点，即不必非要是物理上的达到数据载体的末尾。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_26_sub"><title>26 – SUB – SUBstitute character替补/替换</title>
+                <para></para>
+            </sect5>
+
+            <sect5 xml:id="ascii_27_esc"><title>27 – ESC – ESCape 逃离/取消</title>
+                <para>字符Escape，是ASCII标准的首创的，由Bob Bemer提议的。用于开始一段控制码的扩展字符。如此，即可以不必将所有可能想得到的字符都放到ASCII标准中了。</para>
+                <para>因为，新的技术可能需要新的控制命令，而ESC可以用作这些字符命令的起始标志。</para>
+                <para>ESC广泛用于打印机和终端，去控制设备设置，比如字体，字符位置和颜色等等。</para>
+                <para>如果最开始的ASCII标准中，没有定义ESC，估计ASCII标准早就被其他标准所替代了，因为其没有包含这些新出现的字符，所以肯定会有其他新的标准出现，用于表示这些字符的。</para>
+                <para>即，ESC给开发者提供了，可以根据需要而定义新含义的字符的可能。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_28_fs"><title>28 – FS – File Separator 文件分隔符</title>
+                <para>文件分隔符是个很有意思的控制字符，因为其可以让我们看到1960s年代的时候，计算机技术是如何组织的。</para>
+                <para>我们现在，习惯于随即访问一些存储介质，比如RAM，磁盘，但是在定义ASCII标准的那个年代，大部分数据还是顺序的，串行的，而不是随机访问的。此处所说的串行的，不仅仅指的是串行通信，还指的是顺序存储介质，比如穿孔卡片，纸带，磁带等。</para>
+                <para>在串行通信的时代，设计这么一个用于表示文件分隔符的控制字符，用于分割两个单独的文件，是一件很明智的事情。而FS的原因就在于此。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_29_gs"><title>29 – GS – Group Separator分组符</title>
+                <para>ASCII定义控制字符的原因中，其中一条就是考虑到了数据存储方面的情况。</para>
+                <para>大部分情况下，数据库的建立，都和表有关，包含了对应的记录。同一个表中的所有的记录，属于同一类型。不同的表中的记录，属于对应的不同的类型。</para>
+                <para>而分组符GS就是用来分隔串行数据存储系统中的不同的组。值得注意的是，当时还没有使用word的表格，当时ASCII时代的人，把他叫做组。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_30_rs"><title>30 – RS – Record Separator记录分隔符</title>
+                <para>记录分隔符RS用于分隔在一个组或表内的多个记录。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_31_us"><title>31 – US – Unit Separator 单元分隔符</title>
+                <para>在ASCII定义中，在数据库中所存储的，最小的数据项，叫做Unit单元。而现在我们称其field域。单元分隔符US用于分割串行数据存储环境下的不同的域。</para>
+                <para>现在大部分的数据库实现，要求大部分类型都拥有固定的长度。</para>
+                <para>尽管大部分时候可能用不到，但是对于每一个域，却都要分配足够大的空间，用于存放最大可能的成员变量。</para>
+                <para>这样的做法，占用了大量的存储空间，而US控制码允许域具有可变的长度。在1960s年代，数据存储空间很有限，用US这个单元分隔符，将不同单元分隔开，这样就可以实现更高效地存储那些宝贵的数据。</para>
+                <para>另一方面，串行存储的存储效率，远低于RAM和磁盘中所实现的表格存储。我个人无法想象，如果现在的数据，还是存储在自带或者带滚轮的磁带上，会是何种景象。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_32_sp"><title>32 – SP – White SPace 空格键</title>
+                <para>也许你会争论说，空格键是否真的能算是一个控制字符？因为现在在普通文字中使用空格键是如此常见。</para>
+                <para>但是，既然水平制表符和退格键在ASCII中，都被叫做控制字符了，那么我觉得也很自然地，可以把空格键（向前的空格）也叫做控制字符，毕竟，其本身并不代表一个真正的可见的字符，而仅仅只是很常用于输出设备，用于处理位置前向移动一格，清除当前位置的内容而已。</para>
+                <para>在很多程序中，比如字符处理程序，白空格同样可能从导致行尾转到下一行行首，而网络浏览器将多个空格组合成单个空格输出。</para>
+                <para>所以，这更加坚定了我的想法，觉得完全可以把空格看成是一个控制字符，而不仅仅是一个很独特的普通字符。</para>
+            </sect5>
+
+            <sect5 xml:id="ascii_127_del"><title>127 – DEL – DELete  删除</title>
+                <para>有人也许会问，为何ASCII字符集中的控制字符的值都是很小的，即0-32，而DEL控制字符的值却很大，是127。</para>
+                <para>这是由于这个特殊的字符是为纸带而定义的。而在那个时候，绝大多数的纸带，都是用7个孔洞去编码数据的。</para>
+                <para>而127这个值所对应的二进制值为111 1111b，表示所有7个比特位都是高，所以，将DEL用在现存的纸带上时，所有的洞就都被穿孔了，就把已经存在的数据都擦出掉了，就起到了对应的删除的作用了。</para>
+            </sect5>
+        </sect4>
+        
+        <sect4 xml:id="common_char_english_naming"><title>各种字符的标准的读法/叫法</title>
+            <para>常见ASCII字符，以及其他非常见的字符，Unicode中的字符，其他特殊字符等等，这些字符的英文叫法，可以去Unicode官方找到：</para>
+            <para><link xl:href="http://www.unicode.org/charts/#symbols" /></para>
+            <para>比如：</para>
+            <para>ASCII字符/字母的叫法/读法 如何读 ：</para>
+            <orderedlist>
+                <listitem><link xl:href="http://www.unicode.org/charts/PDF/U0000.pdf">C0 Control and Basic Latin Range：0000-007F</link></listitem>
+                <listitem><link xl:href="http://www.unicode.org/charts/PDF/UFB00.pdf">Alphabetic Presentation Forms Range：FB00-FB4F</link></listitem>
+                <listitem><link xl:href="http://www.unicode.org/charts/PDF/UFE30.pdf">CJK Compatibility Forms</link></listitem>
+                <listitem><link xl:href="http://www.unicode.org/charts/PDF/UFF00.pdf">Fullwidth ASCII Punctuation</link></listitem>
+            </orderedlist>
+        </sect4>
+    </sect3>
+</sect2>
+
+<sect2 xml:id="iso_646"><title>ISO 646</title>
+    <para>ASCII的字符编码是美国自己定义的标准，而其对应的国际标准叫做ISO/IEC 646。</para>
+    <para>ISO/IEC是参考了多个国家的字符编码标准，其中主要是美国ASCII标准，然后制定出来的7位的国际字符编码标准。</para>
+    <para>所以，此处，可以简单看成美国的国家标准ASCII和国际标准ISO/IEC 646，两者是是等价的，即：</para>
+    <para><emphasis>美国的国家的字符编码标准ASCII</emphasis></para>
+    <para><emphasis>=国际的字符编码标准ISO/IEC 646</emphasis></para>
+</sect2>
+
+</sect1>

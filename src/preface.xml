@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<!DOCTYPE preface>
+
+<preface
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:mathml="http://www.w3.org/1998/Math/MathML"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:svg="http://www.w3.org/2000/svg"
+
+    xml:id="preface">
+<title>正文之前</title>
+
+<section xml:id="purpose"><title>目的</title>
+    <para>本文旨在讲清楚字符编码的概念和来龙去脉，和常见标准之间的关系和区别。</para>
+</section>
+
+<section xml:id="content"><title>本文内容</title>
+    <para>个人对于字符编码的理解，最开始主要是看了阮一峰的这篇文章：</para>
+    <link xl:href="http://www.crifan.com/switch_character_encoding_notes_ascii_unicode_and_utf-8/">【转】字符编码笔记：ASCII，Unicode和UTF-8</link>
+    <para>然后自己花了更多的时间，搜集整理了和字符编码的更详细的知识，整理出来，以供大家参考。</para>
+    <para>其中也摘录了该贴的部分内容。</para>
+
+    <tip xml:id="tip.simple_version"><title>此文的简化版：字符编码简明教程</title>
+        <para>如果觉得本文内容太长，只是想要简要了解字符编码的话，可以去看我写的另外一个简明教程：</para>
+        <para><link xl:href="http://www.crifan.com/character_encoding_charset_simpile_tutorial/">字符编码简明教程</link></para>
+    </tip>
+
+    <tip xml:id="tip.encoding_application"><title>关于字符编码的实际应用</title>
+        <para>对于这些字符编码，在实际的各种软件，工具，实际开发期间的各种应用，详见：</para>
+        <para><link xl:href="http://www.crifan.com/files/doc/docbook/char_encoding_usage/release/html/char_encoding_usage.html">字符编码应用</link></para>
+    </tip>
+</section>
+
+<section xml:id="declaration"><title>声明</title>
+    <para>任何问题，意见，建议等，都欢迎一起探讨：admin (at) crifan.com。</para>
+</section>
+
+</preface>

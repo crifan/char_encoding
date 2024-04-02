@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<glossary
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    
+    xml:id="glossary">
+<title>缩略词</title>
+
+<glossentry id="ASCII"><glossterm>ASCII</glossterm>
+    <acronym>ASCII</acronym>
+    <glossdef>
+      <para>American Standard Code for Information Interchange</para>
+      <para>美国信息交换标准代码</para>
+    </glossdef>
+</glossentry>
+
+<glossentry id="BMP"><glossterm>BMP</glossterm>
+    <acronym>BMP</acronym>
+    <glossdef>
+      <para>Basic Multilingual Plane</para>
+      <para>基本多文种平面</para>
+    </glossdef>
+</glossentry>
+
+<glossentry id="EBCDIC"><glossterm>EBCDIC</glossterm>
+    <acronym>EBCDIC</acronym>
+    <glossdef>
+      <para>Extended Binary Coded Decimal Interchange Code</para>
+      <para>扩展二进制编码十进制交换码</para>
+    </glossdef>
+</glossentry>
+
+<glossentry id="IANA"><glossterm>IANA</glossterm>
+    <acronym>IANA</acronym>
+    <glossdef>
+      <para>Internet Assigned Numbers Authority</para>
+      <para>互联网号码分配局</para>
+    </glossdef>
+</glossentry>
+
+<glossentry id="ISO_IEC"><glossterm>ISO/IEC</glossterm>
+    <acronym>ISO/IEC</acronym>
+    <glossdef>
+      <para>International Organization for Standardization / International Electrotechnical Commission</para>
+      <para>国际标准化组织和国际电工委员会</para>
+    </glossdef>
+</glossentry>
+
+<glossentry id="UCS"><glossterm>UCS</glossterm>
+    <acronym>UCS</acronym>
+    <glossdef>
+      <para>Universal Character Set</para>
+      <para>通用字符集</para>
+    </glossdef>
+</glossentry>
+
+<glossentry id="UTF"><glossterm>UTF</glossterm>
+    <acronym>UTF</acronym>
+    <glossdef>
+      <para>Unicode Transformation Format</para>
+      <para>Unicode转换格式</para>
+    </glossdef>
+</glossentry>
+
+</glossary>

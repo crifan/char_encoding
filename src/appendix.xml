@@ -1,0 +1,404 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<!DOCTYPE appendix
+[
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" 'http://www.crifan.com/files/res/docbook/entity/crl.ent'>
+%crl_ent;
+
+]>
+
+<appendix 
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    
+    xml:id="appendix"
+    >
+
+<title>编码相关的表格</title>
+
+<sect1 xml:id="ascii_table_0_127"><title>ASCII编码表(0-127)</title>
+
+    <table xml:id="tbl.ascii_0_127"><title>ASCII编码表(0-127)</title>
+        <tgroup cols="12">
+            <thead>
+<row><entry>十六进制</entry><entry>十进制</entry><entry>字符</entry><entry>十六进制</entry><entry>十进制</entry><entry>字符</entry><entry>十六进制</entry><entry>十进制</entry><entry>字符</entry><entry>十六进制</entry><entry>十进制</entry><entry>字符</entry></row>
+            </thead>
+            
+            <tbody>
+<row><entry>0</entry><entry>0</entry><entry>NUL</entry><entry>20</entry><entry>32</entry><entry>[space]</entry><entry>40</entry><entry>64</entry><entry>@</entry><entry>60</entry><entry>96</entry><entry>'</entry></row>
+<row><entry>1</entry><entry>1</entry><entry>SOH</entry><entry>21</entry><entry>33</entry><entry>!</entry><entry>41</entry><entry>65</entry><entry>A</entry><entry>61</entry><entry>97</entry><entry>a</entry></row>
+<row><entry>2</entry><entry>2</entry><entry>STX</entry><entry>22</entry><entry>34</entry><entry>"</entry><entry>42</entry><entry>66</entry><entry>B</entry><entry>62</entry><entry>98</entry><entry>b</entry></row>
+<row><entry>3</entry><entry>3</entry><entry>ETX</entry><entry>23</entry><entry>35</entry><entry>#</entry><entry>43</entry><entry>67</entry><entry>C</entry><entry>63</entry><entry>99</entry><entry>c</entry></row>
+<row><entry>4</entry><entry>4</entry><entry>EOT</entry><entry>24</entry><entry>36</entry><entry>$</entry><entry>44</entry><entry>68</entry><entry>D</entry><entry>64</entry><entry>100</entry><entry>d</entry></row>
+<row><entry>5</entry><entry>5</entry><entry>ENQ</entry><entry>25</entry><entry>37</entry><entry>%</entry><entry>45</entry><entry>69</entry><entry>E</entry><entry>65</entry><entry>101</entry><entry>e</entry></row>
+<row><entry>6</entry><entry>6</entry><entry>ACK</entry><entry>26</entry><entry>38</entry><entry>&amp;</entry><entry>46</entry><entry>70</entry><entry>F</entry><entry>66</entry><entry>102</entry><entry>f</entry></row>
+<row><entry>7</entry><entry>7</entry><entry>BEL</entry><entry>27</entry><entry>39</entry><entry>`</entry><entry>47</entry><entry>71</entry><entry>G</entry><entry>67</entry><entry>103</entry><entry>g</entry></row>
+<row><entry>8</entry><entry>8</entry><entry>BS</entry><entry>28</entry><entry>40</entry><entry>(</entry><entry>48</entry><entry>72</entry><entry>H</entry><entry>68</entry><entry>104</entry><entry>h</entry></row>
+<row><entry>9</entry><entry>9</entry><entry>HT</entry><entry>29</entry><entry>41</entry><entry>)</entry><entry>49</entry><entry>73</entry><entry>I</entry><entry>69</entry><entry>105</entry><entry>i</entry></row>
+<row><entry>0a</entry><entry>10</entry><entry>LF</entry><entry>2a</entry><entry>42</entry><entry>*</entry><entry>4a</entry><entry>74</entry><entry>J</entry><entry>6a</entry><entry>106</entry><entry>j</entry></row>
+<row><entry>0b</entry><entry>11</entry><entry>VT</entry><entry>2b</entry><entry>43</entry><entry>+</entry><entry>4b</entry><entry>75</entry><entry>K</entry><entry>6b</entry><entry>107</entry><entry>k</entry></row>
+<row><entry>0c</entry><entry>12</entry><entry>FF</entry><entry>2c</entry><entry>44</entry><entry>,</entry><entry>4c</entry><entry>76</entry><entry>L</entry><entry>6c</entry><entry>108</entry><entry>l</entry></row>
+<row><entry>0d</entry><entry>13</entry><entry>CR</entry><entry>2d</entry><entry>45</entry><entry>-</entry><entry>4d</entry><entry>77</entry><entry>M</entry><entry>6d</entry><entry>109</entry><entry>m</entry></row>
+<row><entry>0e</entry><entry>14</entry><entry>SO</entry><entry>2e</entry><entry>46</entry><entry>.</entry><entry>4e</entry><entry>78</entry><entry>N</entry><entry>6e</entry><entry>110</entry><entry>n</entry></row>
+<row><entry>0f</entry><entry>15</entry><entry>SI</entry><entry>2f</entry><entry>47</entry><entry>/</entry><entry>4f</entry><entry>79</entry><entry>O</entry><entry>6f</entry><entry>111</entry><entry>o</entry></row>
+<row><entry>10</entry><entry>16</entry><entry>DLE</entry><entry>30</entry><entry>48</entry><entry>0</entry><entry>50</entry><entry>80</entry><entry>P</entry><entry>70</entry><entry>112</entry><entry>p</entry></row>
+<row><entry>11</entry><entry>17</entry><entry>DC1</entry><entry>31</entry><entry>49</entry><entry>1</entry><entry>51</entry><entry>81</entry><entry>Q</entry><entry>71</entry><entry>113</entry><entry>q</entry></row>
+<row><entry>12</entry><entry>18</entry><entry>DC2</entry><entry>32</entry><entry>50</entry><entry>2</entry><entry>52</entry><entry>82</entry><entry>R</entry><entry>72</entry><entry>114</entry><entry>r</entry></row>
+<row><entry>13</entry><entry>19</entry><entry>DC3</entry><entry>33</entry><entry>51</entry><entry>3</entry><entry>53</entry><entry>83</entry><entry>S</entry><entry>73</entry><entry>115</entry><entry>s</entry></row>
+<row><entry>14</entry><entry>20</entry><entry>DC4</entry><entry>34</entry><entry>52</entry><entry>4</entry><entry>54</entry><entry>84</entry><entry>T</entry><entry>74</entry><entry>116</entry><entry>t</entry></row>
+<row><entry>15</entry><entry>21</entry><entry>NAK</entry><entry>35</entry><entry>53</entry><entry>5</entry><entry>55</entry><entry>85</entry><entry>U</entry><entry>75</entry><entry>117</entry><entry>u</entry></row>
+<row><entry>16</entry><entry>22</entry><entry>SYN</entry><entry>36</entry><entry>54</entry><entry>6</entry><entry>56</entry><entry>86</entry><entry>V</entry><entry>76</entry><entry>118</entry><entry>v</entry></row>
+<row><entry>17</entry><entry>23</entry><entry>ETB</entry><entry>37</entry><entry>55</entry><entry>7</entry><entry>57</entry><entry>87</entry><entry>W</entry><entry>77</entry><entry>119</entry><entry>w</entry></row>
+<row><entry>18</entry><entry>24</entry><entry>CAN</entry><entry>38</entry><entry>56</entry><entry>8</entry><entry>58</entry><entry>88</entry><entry>X</entry><entry>78</entry><entry>120</entry><entry>x</entry></row>
+<row><entry>19</entry><entry>25</entry><entry>EM</entry><entry>39</entry><entry>57</entry><entry>9</entry><entry>59</entry><entry>89</entry><entry>Y</entry><entry>79</entry><entry>121</entry><entry>y</entry></row>
+<row><entry>1a</entry><entry>26</entry><entry>SUB</entry><entry>3a</entry><entry>58</entry><entry>:</entry><entry>5a</entry><entry>90</entry><entry>Z</entry><entry>7a</entry><entry>122</entry><entry>z</entry></row>
+<row><entry>1b</entry><entry>27</entry><entry>ESC</entry><entry>3b</entry><entry>59</entry><entry>;</entry><entry>5b</entry><entry>91</entry><entry>[</entry><entry>7b</entry><entry>123</entry><entry>{</entry></row>
+<row><entry>1c</entry><entry>28</entry><entry>FS</entry><entry>3c</entry><entry>60</entry><entry>&lt;</entry><entry>5c</entry><entry>92</entry><entry>\</entry><entry>7c</entry><entry>124</entry><entry>|</entry></row>
+<row><entry>1d</entry><entry>29</entry><entry>GS</entry><entry>3d</entry><entry>61</entry><entry>=</entry><entry>5d</entry><entry>93</entry><entry>]</entry><entry>7d</entry><entry>125</entry><entry>}</entry></row>
+<row><entry>1e</entry><entry>30</entry><entry>RS</entry><entry>3e</entry><entry>62</entry><entry>&gt;</entry><entry>5e</entry><entry>94</entry><entry>^</entry><entry>7e</entry><entry>126</entry><entry>~</entry></row>
+<row><entry>1f</entry><entry>31</entry><entry>US</entry><entry>3f</entry><entry>63</entry><entry>?</entry><entry>5f</entry><entry>95</entry><entry>_</entry><entry>7f</entry><entry>127</entry><entry>[delete]</entry></row>
+            </tbody>
+        </tgroup>
+    </table>
+</sect1>
+
+<sect1 xml:id="iso_iec_8859_15_charsets"><title>ISO/IEC 8859编码标准中的15种字符集</title>
+    <table xml:id="tbl.isoiec8859_15_charset"><title>ISO/IEC 8859编码标准中的15种字符集</title>
+        <tgroup cols="3">
+            <colspec colnum="1" colname="col1" colwidth="1*" />
+            <colspec colnum="2" colname="col2" colwidth="1*" />
+            <colspec colnum="3" colname="col3" colwidth="3*" />
+            
+            <thead>
+                <row><entry>ISO/IEC 8859-n</entry><entry>英文别名</entry><entry>中文解释</entry></row>
+            </thead>
+            
+            <tbody>
+                <row><entry>ISO/IEC 8859 -1</entry><entry>Latin-1</entry><entry>西欧语言</entry></row>
+                <row><entry>ISO/IEC 8859 -2</entry><entry>Latin-2</entry><entry>中欧语言</entry></row>
+                <row><entry>ISO/IEC 8859 -3</entry><entry>Latin-3</entry><entry>南欧语言。世界语也可用此字符集显示。</entry></row>
+                <row><entry>ISO/IEC 8859 -4</entry><entry>Latin-4</entry><entry>北欧语言</entry></row>
+                <row><entry>ISO/IEC 8859 -5</entry><entry>Cyrillic</entry><entry>斯拉夫语言</entry></row>
+                <row><entry>ISO/IEC 8859 -6</entry><entry>Arabic</entry><entry>阿拉伯语</entry></row>
+                <row><entry>ISO/IEC 8859 -7</entry><entry>Greek</entry><entry>希腊语</entry></row>
+                <row><entry>ISO/IEC 8859 -8</entry><entry>Hebrew</entry><entry>希伯来语（视觉顺序）；ISO 8859-8-I是 希伯来语（逻辑顺序）</entry></row>
+                <row><entry>ISO/IEC 8859 -9</entry><entry>Latin-5 或 Turkish</entry><entry>它把Latin-1的冰岛语字母换走，加入土耳其语字母</entry></row>
+                <row><entry>ISO/IEC 8859 -10</entry><entry>Latin-6 或 Nordic</entry><entry>北日耳曼语支，用来代替Latin-4</entry></row>
+                <row><entry>ISO/IEC 8859 -11</entry><entry>Thai</entry><entry>从泰国的 TIS620 标准字集演化而来</entry></row>
+                <row><entry>ISO/IEC 8859 -13</entry><entry>Latin-7 或 Baltic Rim</entry><entry>波罗的语族</entry></row>
+                <row><entry>ISO/IEC 8859 -14</entry><entry>Latin-8 或 Celtic</entry><entry>凯尔特语族</entry></row>
+                <row><entry>ISO/IEC 8859 -15</entry><entry>Latin-9</entry><entry>西欧语言，加入Latin-1欠缺的芬兰语字母和大写法语重音字母，以及欧元（€）符号。</entry></row>
+                <row><entry>ISO/IEC 8859 -16</entry><entry>Latin-10</entry><entry>东南欧语言。主要供罗马尼亚语使用，并加入欧元符号。</entry></row>
+            </tbody>
+        </tgroup>
+    </table>
+</sect1>
+
+<sect1 xml:id="codepage_tables"><title>Code Page表格</title>
+    <sect2 xml:id="common_codepage_tables"><title>常见的ANSI和OEM的Code Page的表格</title>
+        <sect3 xml:id="ansi_codepage_tables"><title>ANSI Code Page表</title>
+            <para>ANSI Code Page中，字符编码都是用的8位单字节，所以也被称为SBCS (Single Byte Character Set) Codepages，即单字节字符集的代码页</para>
+            <table xml:id="tbl.ansi_sbcs_codepage"><title>ANSI的SBCS Code Page</title>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1" colwidth="1*" />
+                    <colspec colnum="2" colname="col2" colwidth="2*" />
+                    <thead align="center">
+                        <row><entry>代码页Code Page</entry><entry>对应的字符集Character Set</entry></row>
+                    </thead>
+                    <tbody>
+                        <row><entry>Code Page 1250</entry><entry>Central and East European Latin</entry></row>
+                        <row><entry>Code Page 1251</entry><entry>Cyrillic</entry></row>
+                        <row><entry>Code Page 1252</entry><entry>West European Latin</entry></row>
+                        <row><entry>Code Page 1253</entry><entry>Greek</entry></row>
+                        <row><entry>Code Page 1254</entry><entry>Turkish</entry></row>
+                        <row><entry>Code Page 1255</entry><entry>Hebrew</entry></row>
+                        <row><entry>Code Page 1256</entry><entry>Arabic</entry></row>
+                        <row><entry>Code Page 1257</entry><entry>Baltic</entry></row>
+                        <row><entry>Code Page 1258</entry><entry>Vietnamese</entry></row>
+                        <row><entry>Code Page 874</entry><entry>Thai</entry></row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </sect3>
+
+        <sect3 xml:id="oem_codepage_tables"><title>OEM Code Page表</title>
+            <para>OEM的Code Page如下：</para>
+            <table xml:id="tbl.oem_codepage"><title>OEM的Code Page</title>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1" colwidth="1*" />
+                    <colspec colnum="2" colname="col2" colwidth="2*" />
+                    <thead align="center">
+                        <row><entry>代码页Code Page</entry><entry>对应的字符集Character Set</entry></row>
+                    </thead>
+                    <tbody>
+                        <row><entry>Code Page 437</entry><entry>original IBM PC  Code Page==USA</entry></row>
+                        <row><entry>Code Page 720</entry><entry>Arabic</entry></row>
+                        <row><entry>Code Page 737</entry><entry>Greek</entry></row>
+                        <row><entry>Code Page 775</entry><entry>Estonian, Lithuanian and Latvian</entry></row>
+                        <row><entry>Code Page 850</entry><entry>"Multilingual (Latin-1)" (Western European languages)</entry></row>
+                        <row><entry>Code Page 852</entry><entry>"Slavic (Latin-2)" (Central and Eastern European languages)</entry></row>
+                        <row><entry>Code Page 855</entry><entry>Cyrillic</entry></row>
+                        <row><entry>Code Page 857</entry><entry>Turkish</entry></row>
+                        <row><entry>Code Page 858</entry><entry>"Multilingual" with euro symbol</entry></row>
+                        <row><entry>Code Page 860</entry><entry>Portuguese</entry></row>
+                        <row><entry>Code Page 861</entry><entry>Icelandic</entry></row>
+                        <row><entry>Code Page 862</entry><entry>Hebrew</entry></row>
+                        <row><entry>Code Page 863</entry><entry>French (Quebec French)</entry></row>
+                        <row><entry>Code Page 865</entry><entry>Danish/Norwegian Differs from 437</entry></row>
+                        <row><entry>Code Page 869</entry><entry>Greek</entry></row>
+                        <row><entry>Code Page 874</entry><entry>Thai</entry></row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </sect3>
+
+        <sect3 xml:id="ansi_oem_common_codepage_tables"><title>ANSI和OEM共有的Code Page表</title>
+            <para>ANSI和OEM共有Code Page，是一些DBCS (Double Byte Character Set) Codepages，即双字节字符集的代码页。</para>
+            <table xml:id="tbl.common_dbcs_codepage"><title>ANSI和OEM共有的DBCS Code Page</title>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1" colwidth="1*" />
+                    <colspec colnum="2" colname="col2" colwidth="2*" />
+                    <thead align="center">
+                        <row><entry>代码页Code Page</entry><entry>对应的字符集Character Set</entry></row>
+                    </thead>
+                    <tbody>
+                        <row><entry>Code Page 932</entry><entry>Japanese</entry></row>
+                        <row><entry>Code Page 936</entry><entry>GBK - Simplified Chinese</entry></row>
+                        <row><entry>Code Page 949</entry><entry>Korean</entry></row>
+                        <row><entry>Code Page 950</entry><entry>BIG5 - Traditional Chinese</entry></row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </sect3>
+
+        <sect3 xml:id="some_common_codepage_tables"><title>其他一些常见的Code Page表</title>
+            <para>其他一些常见的Code Page如下：</para>
+            <table xml:id="tbl.some_common_codepage"><title>一些常见的Code Page</title>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1" colwidth="1*" />
+                    <colspec colnum="2" colname="col2" colwidth="2*" />
+                    <thead align="center">
+                        <row><entry>代码页Code Page</entry><entry>对应的字符集Character Set</entry></row>
+                    </thead>
+                    <tbody>
+                        <row><entry>Code Page 1200</entry><entry>UTF-16LE Unicode little-endian</entry></row>
+                        <row><entry>Code Page 1201</entry><entry>UTF-16BE Unicode big-endian</entry></row>
+                        <row><entry>Code Page 65000</entry><entry>UTF-7 Unicode</entry></row>
+                        <row><entry>Code Page 65001</entry><entry>UTF-8 Unicode</entry></row>
+                        <row><entry>Code Page 10000</entry><entry>Macintosh Roman encoding (followed by several other Mac character sets)</entry></row>
+                        <row><entry>Code Page 10007</entry><entry>Macintosh Cyrillic encoding</entry></row>
+                        <row><entry>Code Page 10029</entry><entry>Macintosh Central European encoding</entry></row>
+                        <row><entry>Code Page 20127</entry><entry>US-ASCII The classic US 7 bit character set with no char larger than 127</entry></row>
+                        <row><entry>Code Page 28591</entry><entry>ISO-8859-1 (followed by ISO-8859-2 to ISO-8859-15)</entry></row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </sect3>
+    </sect2>
+
+    <sect2 xml:id="all_codepage_tables"><title>所有的Code Page相关的表格</title>
+        <table xml:id="tbl.code_page_identifiers"><title>微软的代码页标识符(Code Page Identifiers)</title>
+            <tgroup cols="3">
+                <colspec colnum="1" colname="col1" colwidth="1*" />
+                <colspec colnum="2" colname="col2" colwidth="2*" />
+                <colspec colnum="3" colname="col3" colwidth="7*" />
+                
+                <thead>
+                    <row><entry>Identifier</entry><entry>.NET Name</entry><entry>Additional information</entry></row>
+                </thead>
+                
+                <tbody>
+                    <row><entry>037</entry><entry>IBM037</entry><entry>IBM EBCDIC US-Canada</entry></row>
+                    <row><entry>437</entry><entry>IBM437</entry><entry>OEM United States</entry></row>
+                    <row><entry>500</entry><entry>IBM500</entry><entry>IBM EBCDIC International</entry></row>
+                    <row><entry>708</entry><entry>ASMO-708</entry><entry>Arabic (ASMO 708)</entry></row>
+                    <row><entry>709</entry><entry></entry><entry>Arabic (ASMO-449+, BCON V4)</entry></row>
+                    <row><entry>710</entry><entry></entry><entry>Arabic - Transparent Arabic</entry></row>
+                    <row><entry>720</entry><entry>DOS-720</entry><entry>Arabic (Transparent ASMO); Arabic (DOS)</entry></row>
+                    <row><entry>737</entry><entry>ibm737</entry><entry>OEM Greek (formerly 437G); Greek (DOS)</entry></row>
+                    <row><entry>775</entry><entry>ibm775</entry><entry>OEM Baltic; Baltic (DOS)</entry></row>
+                    <row><entry>850</entry><entry>ibm850</entry><entry>OEM Multilingual Latin 1; Western European (DOS)</entry></row>
+                    <row><entry>852</entry><entry>ibm852</entry><entry>OEM Latin 2; Central European (DOS)</entry></row>
+                    <row><entry>855</entry><entry>IBM855</entry><entry>OEM Cyrillic (primarily Russian)</entry></row>
+                    <row><entry>857</entry><entry>ibm857</entry><entry>OEM Turkish; Turkish (DOS)</entry></row>
+                    <row><entry>858</entry><entry>IBM00858</entry><entry>OEM Multilingual Latin 1 + Euro symbol</entry></row>
+                    <row><entry>860</entry><entry>IBM860</entry><entry>OEM Portuguese; Portuguese (DOS)</entry></row>
+                    <row><entry>861</entry><entry>ibm861</entry><entry>OEM Icelandic; Icelandic (DOS)</entry></row>
+                    <row><entry>862</entry><entry>DOS-862</entry><entry>OEM Hebrew; Hebrew (DOS)</entry></row>
+                    <row><entry>863</entry><entry>IBM863</entry><entry>OEM French Canadian; French Canadian (DOS)</entry></row>
+                    <row><entry>864</entry><entry>IBM864</entry><entry>OEM Arabic; Arabic (864)</entry></row>
+                    <row><entry>865</entry><entry>IBM865</entry><entry>OEM Nordic; Nordic (DOS)</entry></row>
+                    <row><entry>866</entry><entry>cp866</entry><entry>OEM Russian; Cyrillic (DOS)</entry></row>
+                    <row><entry>869</entry><entry>ibm869</entry><entry>OEM Modern Greek; Greek, Modern (DOS)</entry></row>
+                    <row><entry>870</entry><entry>IBM870</entry><entry>IBM EBCDIC Multilingual/ROECE (Latin 2); IBM EBCDIC Multilingual Latin 2</entry></row>
+                    <row><entry>874</entry><entry>windows-874</entry><entry>ANSI/OEM Thai (same as 28605, ISO 8859-15); Thai (Windows)</entry></row>
+                    <row><entry>875</entry><entry>cp875</entry><entry>IBM EBCDIC Greek Modern</entry></row>
+                    <row><entry><emphasis>932</emphasis></entry><entry><emphasis>shift_jis</emphasis></entry><entry>ANSI/OEM Japanese; Japanese (Shift-JIS)</entry></row>
+                    <row><entry><emphasis>936</emphasis></entry><entry><emphasis>gb2312</emphasis></entry><entry>ANSI/OEM Simplified Chinese (PRC, Singapore); Chinese Simplified (GB2312)</entry></row>
+                    <row><entry><emphasis>949</emphasis></entry><entry><emphasis>ks_c_5601-1987</emphasis></entry><entry>ANSI/OEM Korean (Unified Hangul Code)</entry></row>
+                    <row><entry><emphasis>950</emphasis></entry><entry><emphasis>big5</emphasis></entry><entry>ANSI/OEM Traditional Chinese (Taiwan; Hong Kong SAR, PRC); Chinese Traditional (Big5)</entry></row>
+                    <row><entry>1026</entry><entry>IBM1026</entry><entry>IBM EBCDIC Turkish (Latin 5)</entry></row>
+                    <row><entry>1047</entry><entry>IBM01047</entry><entry>IBM EBCDIC Latin 1/Open System</entry></row>
+                    <row><entry>1140</entry><entry>IBM01140</entry><entry>IBM EBCDIC US-Canada (037 + Euro symbol); IBM EBCDIC (US-Canada-Euro)</entry></row>
+                    <row><entry>1141</entry><entry>IBM01141</entry><entry>IBM EBCDIC Germany (20273 + Euro symbol); IBM EBCDIC (Germany-Euro)</entry></row>
+                    <row><entry>1142</entry><entry>IBM01142</entry><entry>IBM EBCDIC Denmark-Norway (20277 + Euro symbol); IBM EBCDIC (Denmark-Norway-Euro)</entry></row>
+                    <row><entry>1143</entry><entry>IBM01143</entry><entry>IBM EBCDIC Finland-Sweden (20278 + Euro symbol); IBM EBCDIC (Finland-Sweden-Euro)</entry></row>
+                    <row><entry>1144</entry><entry>IBM01144</entry><entry>IBM EBCDIC Italy (20280 + Euro symbol); IBM EBCDIC (Italy-Euro)</entry></row>
+                    <row><entry>1145</entry><entry>IBM01145</entry><entry>IBM EBCDIC Latin America-Spain (20284 + Euro symbol); IBM EBCDIC (Spain-Euro)</entry></row>
+                    <row><entry>1146</entry><entry>IBM01146</entry><entry>IBM EBCDIC United Kingdom (20285 + Euro symbol); IBM EBCDIC (UK-Euro)</entry></row>
+                    <row><entry>1147</entry><entry>IBM01147</entry><entry>IBM EBCDIC France (20297 + Euro symbol); IBM EBCDIC (France-Euro)</entry></row>
+                    <row><entry>1148</entry><entry>IBM01148</entry><entry>IBM EBCDIC International (500 + Euro symbol); IBM EBCDIC (International-Euro)</entry></row>
+                    <row><entry>1149</entry><entry>IBM01149</entry><entry>IBM EBCDIC Icelandic (20871 + Euro symbol); IBM EBCDIC (Icelandic-Euro)</entry></row>
+                    <row><entry><emphasis>1200</emphasis></entry><entry><emphasis>utf-16</emphasis></entry><entry>Unicode UTF-16, little endian byte order (BMP of ISO 10646); available only to managed applications</entry></row>
+                    <row><entry><emphasis>1201</emphasis></entry><entry><emphasis>unicodeFFFE</emphasis></entry><entry>Unicode UTF-16, big endian byte order; available only to managed applications</entry></row>
+                    <row><entry>1250</entry><entry>windows-1250</entry><entry>ANSI Central European; Central European (Windows)</entry></row>
+                    <row><entry>1251</entry><entry>windows-1251</entry><entry>ANSI Cyrillic; Cyrillic (Windows)</entry></row>
+                    <row><entry>1252</entry><entry>windows-1252</entry><entry>ANSI Latin 1; Western European (Windows)</entry></row>
+                    <row><entry>1253</entry><entry>windows-1253</entry><entry>ANSI Greek; Greek (Windows)</entry></row>
+                    <row><entry>1254</entry><entry>windows-1254</entry><entry>ANSI Turkish; Turkish (Windows)</entry></row>
+                    <row><entry>1255</entry><entry>windows-1255</entry><entry>ANSI Hebrew; Hebrew (Windows)</entry></row>
+                    <row><entry>1256</entry><entry>windows-1256</entry><entry>ANSI Arabic; Arabic (Windows)</entry></row>
+                    <row><entry>1257</entry><entry>windows-1257</entry><entry>ANSI Baltic; Baltic (Windows)</entry></row>
+                    <row><entry>1258</entry><entry>windows-1258</entry><entry>ANSI/OEM Vietnamese; Vietnamese (Windows)</entry></row>
+                    <row><entry>1361</entry><entry>Johab</entry><entry>Korean (Johab)</entry></row>
+                    <row><entry>10000</entry><entry>macintosh</entry><entry>MAC Roman; Western European (Mac)</entry></row>
+                    <row><entry>10001</entry><entry>x-mac-japanese</entry><entry>Japanese (Mac)</entry></row>
+                    <row><entry>10002</entry><entry>x-mac-chinesetrad</entry><entry>MAC Traditional Chinese (Big5); Chinese Traditional (Mac)</entry></row>
+                    <row><entry>10003</entry><entry>x-mac-korean</entry><entry>Korean (Mac)</entry></row>
+                    <row><entry>10004</entry><entry>x-mac-arabic</entry><entry>Arabic (Mac)</entry></row>
+                    <row><entry>10005</entry><entry>x-mac-hebrew</entry><entry>Hebrew (Mac)</entry></row>
+                    <row><entry>10006</entry><entry>x-mac-greek</entry><entry>Greek (Mac)</entry></row>
+                    <row><entry>10007</entry><entry>x-mac-cyrillic</entry><entry>Cyrillic (Mac)</entry></row>
+                    <row><entry>10008</entry><entry>x-mac-chinesesimp</entry><entry>MAC Simplified Chinese (GB 2312); Chinese Simplified (Mac)</entry></row>
+                    <row><entry>10010</entry><entry>x-mac-romanian</entry><entry>Romanian (Mac)</entry></row>
+                    <row><entry>10017</entry><entry>x-mac-ukrainian</entry><entry>Ukrainian (Mac)</entry></row>
+                    <row><entry>10021</entry><entry>x-mac-thai</entry><entry>Thai (Mac)</entry></row>
+                    <row><entry>10029</entry><entry>x-mac-ce</entry><entry>MAC Latin 2; Central European (Mac)</entry></row>
+                    <row><entry>10079</entry><entry>x-mac-icelandic</entry><entry>Icelandic (Mac)</entry></row>
+                    <row><entry>10081</entry><entry>x-mac-turkish</entry><entry>Turkish (Mac)</entry></row>
+                    <row><entry>10082</entry><entry>x-mac-croatian</entry><entry>Croatian (Mac)</entry></row>
+                    <row><entry>12000</entry><entry>utf-32</entry><entry>Unicode UTF-32, little endian byte order; available only to managed applications</entry></row>
+                    <row><entry>12001</entry><entry>utf-32BE</entry><entry>Unicode UTF-32, big endian byte order; available only to managed applications</entry></row>
+                    <row><entry>20000</entry><entry>x-Chinese_CNS</entry><entry>CNS Taiwan; Chinese Traditional (CNS)</entry></row>
+                    <row><entry>20001</entry><entry>x-cp20001</entry><entry>TCA Taiwan</entry></row>
+                    <row><entry>20002</entry><entry>x_Chinese-Eten</entry><entry>Eten Taiwan; Chinese Traditional (Eten)</entry></row>
+                    <row><entry>20003</entry><entry>x-cp20003</entry><entry>IBM5550 Taiwan</entry></row>
+                    <row><entry>20004</entry><entry>x-cp20004</entry><entry>TeleText Taiwan</entry></row>
+                    <row><entry>20005</entry><entry>x-cp20005</entry><entry>Wang Taiwan</entry></row>
+                    <row><entry>20105</entry><entry>x-IA5</entry><entry>IA5 (IRV International Alphabet No. 5, 7-bit); Western European (IA5)</entry></row>
+                    <row><entry>20106</entry><entry>x-IA5-German</entry><entry>IA5 German (7-bit)</entry></row>
+                    <row><entry>20107</entry><entry>x-IA5-Swedish</entry><entry>IA5 Swedish (7-bit)</entry></row>
+                    <row><entry>20108</entry><entry>x-IA5-Norwegian</entry><entry>IA5 Norwegian (7-bit)</entry></row>
+                    <row><entry>20127</entry><entry>us-ascii</entry><entry>US-ASCII (7-bit)</entry></row>
+                    <row><entry>20261</entry><entry>x-cp20261</entry><entry>T.61</entry></row>
+                    <row><entry>20269</entry><entry>x-cp20269</entry><entry>ISO 6937 Non-Spacing Accent</entry></row>
+                    <row><entry>20273</entry><entry>IBM273</entry><entry>IBM EBCDIC Germany</entry></row>
+                    <row><entry>20277</entry><entry>IBM277</entry><entry>IBM EBCDIC Denmark-Norway</entry></row>
+                    <row><entry>20278</entry><entry>IBM278</entry><entry>IBM EBCDIC Finland-Sweden</entry></row>
+                    <row><entry>20280</entry><entry>IBM280</entry><entry>IBM EBCDIC Italy</entry></row>
+                    <row><entry>20284</entry><entry>IBM284</entry><entry>IBM EBCDIC Latin America-Spain</entry></row>
+                    <row><entry>20285</entry><entry>IBM285</entry><entry>IBM EBCDIC United Kingdom</entry></row>
+                    <row><entry>20290</entry><entry>IBM290</entry><entry>IBM EBCDIC Japanese Katakana Extended</entry></row>
+                    <row><entry>20297</entry><entry>IBM297</entry><entry>IBM EBCDIC France</entry></row>
+                    <row><entry>20420</entry><entry>IBM420</entry><entry>IBM EBCDIC Arabic</entry></row>
+                    <row><entry>20423</entry><entry>IBM423</entry><entry>IBM EBCDIC Greek</entry></row>
+                    <row><entry>20424</entry><entry>IBM424</entry><entry>IBM EBCDIC Hebrew</entry></row>
+                    <row><entry>20833</entry><entry>x-EBCDIC-KoreanExtended</entry><entry>IBM EBCDIC Korean Extended</entry></row>
+                    <row><entry>20838</entry><entry>IBM-Thai</entry><entry>IBM EBCDIC Thai</entry></row>
+                    <row><entry>20866</entry><entry>koi8-r</entry><entry>Russian (KOI8-R); Cyrillic (KOI8-R)</entry></row>
+                    <row><entry>20871</entry><entry>IBM871</entry><entry>IBM EBCDIC Icelandic</entry></row>
+                    <row><entry>20880</entry><entry>IBM880</entry><entry>IBM EBCDIC Cyrillic Russian</entry></row>
+                    <row><entry>20905</entry><entry>IBM905</entry><entry>IBM EBCDIC Turkish</entry></row>
+                    <row><entry>20924</entry><entry>IBM00924</entry><entry>IBM EBCDIC Latin 1/Open System (1047 + Euro symbol)</entry></row>
+                    <row><entry>20932</entry><entry>EUC-JP</entry><entry>Japanese (JIS 0208-1990 and 0121-1990)</entry></row>
+                    <row><entry>20936</entry><entry>x-cp20936</entry><entry>Simplified Chinese (GB2312); Chinese Simplified (GB2312-80)</entry></row>
+                    <row><entry>20949</entry><entry>x-cp20949</entry><entry>Korean Wansung</entry></row>
+                    <row><entry>21025</entry><entry>cp1025</entry><entry>IBM EBCDIC Cyrillic Serbian-Bulgarian</entry></row>
+                    <row><entry>21027</entry><entry></entry><entry>(deprecated)</entry></row>
+                    <row><entry>21866</entry><entry>koi8-u</entry><entry>Ukrainian (KOI8-U); Cyrillic (KOI8-U)</entry></row>
+                    <row><entry>28591</entry><entry>iso-8859-1</entry><entry>ISO 8859-1 Latin 1; Western European (ISO)</entry></row>
+                    <row><entry>28592</entry><entry>iso-8859-2</entry><entry>ISO 8859-2 Central European; Central European (ISO)</entry></row>
+                    <row><entry>28593</entry><entry>iso-8859-3</entry><entry>ISO 8859-3 Latin 3</entry></row>
+                    <row><entry>28594</entry><entry>iso-8859-4</entry><entry>ISO 8859-4 Baltic</entry></row>
+                    <row><entry>28595</entry><entry>iso-8859-5</entry><entry>ISO 8859-5 Cyrillic</entry></row>
+                    <row><entry>28596</entry><entry>iso-8859-6</entry><entry>ISO 8859-6 Arabic</entry></row>
+                    <row><entry>28597</entry><entry>iso-8859-7</entry><entry>ISO 8859-7 Greek</entry></row>
+                    <row><entry>28598</entry><entry>iso-8859-8</entry><entry>ISO 8859-8 Hebrew; Hebrew (ISO-Visual)</entry></row>
+                    <row><entry>28599</entry><entry>iso-8859-9</entry><entry>ISO 8859-9 Turkish</entry></row>
+                    <row><entry>28603</entry><entry>iso-8859-13</entry><entry>ISO 8859-13 Estonian</entry></row>
+                    <row><entry>28605</entry><entry>iso-8859-15</entry><entry>ISO 8859-15 Latin 9</entry></row>
+                    <row><entry>29001</entry><entry>x-Europa</entry><entry>Europa 3</entry></row>
+                    <row><entry>38598</entry><entry>iso-8859-8-i</entry><entry>ISO 8859-8 Hebrew; Hebrew (ISO-Logical)</entry></row>
+                    <row><entry>50220</entry><entry>iso-2022-jp</entry><entry>ISO 2022 Japanese with no halfwidth Katakana; Japanese (JIS)</entry></row>
+                    <row><entry>50221</entry><entry>csISO2022JP</entry><entry>ISO 2022 Japanese with halfwidth Katakana; Japanese (JIS-Allow 1 byte Kana)</entry></row>
+                    <row><entry>50222</entry><entry>iso-2022-jp</entry><entry>ISO 2022 Japanese JIS X 0201-1989; Japanese (JIS-Allow 1 byte Kana - SO/SI)</entry></row>
+                    <row><entry>50225</entry><entry>iso-2022-kr</entry><entry>ISO 2022 Korean</entry></row>
+                    <row><entry>50227</entry><entry>x-cp50227</entry><entry>ISO 2022 Simplified Chinese; Chinese Simplified (ISO 2022)</entry></row>
+                    <row><entry>50229</entry><entry></entry><entry>ISO 2022 Traditional Chinese</entry></row>
+                    <row><entry>50930</entry><entry></entry><entry>EBCDIC Japanese (Katakana) Extended</entry></row>
+                    <row><entry>50931</entry><entry></entry><entry>EBCDIC US-Canada and Japanese</entry></row>
+                    <row><entry>50933</entry><entry></entry><entry>EBCDIC Korean Extended and Korean</entry></row>
+                    <row><entry>50935</entry><entry></entry><entry>EBCDIC Simplified Chinese Extended and Simplified Chinese</entry></row>
+                    <row><entry>50936</entry><entry></entry><entry>EBCDIC Simplified Chinese</entry></row>
+                    <row><entry>50937</entry><entry></entry><entry>EBCDIC US-Canada and Traditional Chinese</entry></row>
+                    <row><entry>50939</entry><entry></entry><entry>EBCDIC Japanese (Latin) Extended and Japanese</entry></row>
+                    <row><entry>51932</entry><entry>euc-jp</entry><entry>EUC Japanese</entry></row>
+                    <row><entry>51936</entry><entry>EUC-CN</entry><entry>EUC Simplified Chinese; Chinese Simplified (EUC)</entry></row>
+                    <row><entry>51949</entry><entry>euc-kr</entry><entry>EUC Korean</entry></row>
+                    <row><entry>51950</entry><entry></entry><entry>EUC Traditional Chinese</entry></row>
+                    <row><entry>52936</entry><entry>hz-gb-2312</entry><entry>HZ-GB2312 Simplified Chinese; Chinese Simplified (HZ)</entry></row>
+                    <row><entry><emphasis>54936</emphasis></entry><entry><emphasis>GB18030</emphasis></entry><entry>Windows XP and later: GB18030 Simplified Chinese (4 byte); Chinese Simplified (GB18030)</entry></row>
+                    <row><entry>57002</entry><entry>x-iscii-de</entry><entry>ISCII Devanagari</entry></row>
+                    <row><entry>57003</entry><entry>x-iscii-be</entry><entry>ISCII Bengali</entry></row>
+                    <row><entry>57004</entry><entry>x-iscii-ta</entry><entry>ISCII Tamil</entry></row>
+                    <row><entry>57005</entry><entry>x-iscii-te</entry><entry>ISCII Telugu</entry></row>
+                    <row><entry>57006</entry><entry>x-iscii-as</entry><entry>ISCII Assamese</entry></row>
+                    <row><entry>57007</entry><entry>x-iscii-or</entry><entry>ISCII Oriya</entry></row>
+                    <row><entry>57008</entry><entry>x-iscii-ka</entry><entry>ISCII Kannada</entry></row>
+                    <row><entry>57009</entry><entry>x-iscii-ma</entry><entry>ISCII Malayalam</entry></row>
+                    <row><entry>57010</entry><entry>x-iscii-gu</entry><entry>ISCII Gujarati</entry></row>
+                    <row><entry>57011</entry><entry>x-iscii-pa</entry><entry>ISCII Punjabi</entry></row>
+                    <row><entry>65000</entry><entry>utf-7</entry><entry>Unicode (UTF-7)</entry></row>
+                    <row><entry><emphasis>65001</emphasis></entry><entry><emphasis>utf-8</emphasis></entry><entry>Unicode (UTF-8)</entry></row>
+                </tbody>
+            </tgroup>
+        </table>
+
+    </sect2>
+
+</sect1>
+
+<sect1 xml:id="diff_enc_bom_tables"><title>不同编码所用的BOM</title>
+    <table xml:id="tbl.bom_table"><title>不同编码所用的BOM</title>
+        <tgroup cols="3">
+            <colspec colnum="1" colname="col1" colwidth="1*" />
+            <colspec colnum="2" colname="col2" colwidth="1*" />
+            <colspec colnum="3" colname="col3" colwidth="1*" />
+            
+            <thead>
+                <row><entry>编码类型</entry><entry>BOM值(16进制)</entry><entry>BOM值(10进制)</entry></row>
+            </thead>
+            
+            <tbody>
+                <row><entry>UTF-8</entry><entry>EF BB BF</entry><entry>239 187 191</entry></row>
+                <row><entry>UTF-16 (BE)</entry><entry>FE FF</entry><entry>254 255</entry></row>
+                <row><entry>UTF-16 (LE)</entry><entry>FF FE</entry><entry>255 254</entry></row>
+                <row><entry>UTF-32 (BE)</entry><entry>00 00 FE FF</entry><entry>0 0 254 255</entry></row>
+                <row><entry>UTF-32 (LE)</entry><entry>FF FE 00 00</entry><entry>255 254 0 0</entry></row>
+                <row><entry morerows="3" valign="center">UTF-7</entry><entry>2B 2F 76 38</entry><entry>43 47 118 56</entry></row>
+                <row><entry colname="col2">2B 2F 76 39</entry><entry>43 47 118 57</entry></row>
+                <row><entry colname="col2">2B 2F 76 2B</entry><entry>43 47 118 43</entry></row>
+                <row><entry colname="col2">2B 2F 76 2F</entry><entry>43 47 118 47</entry></row>
+                <row><entry>UTF-1</entry><entry>F7 64 4C</entry><entry>247 100 76</entry></row>
+                <row><entry>UTF-EBCDIC</entry><entry>DD 73 66 73</entry><entry>221 115 102 115</entry></row>
+                <row><entry>SCSU</entry><entry>0E FE FF</entry><entry>14 254 255</entry></row>
+                <row><entry>BOCU-1</entry><entry>FB EE 28</entry><entry>251 238 40</entry></row>
+                <row><entry>GB-18030</entry><entry>84 31 95 33</entry><entry>132 49 149 51</entry></row>
+            </tbody>
+        </tgroup>
+    </table>
+</sect1>
+
+</appendix>

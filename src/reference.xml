@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<bibliography
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    
+    xml:id="reference">
+
+<bibliomixed xml:id="ref.ascii_unicode_utf8">
+  <bibliosource><link xl:href="http://www.crifan.com/switch_character_encoding_notes_ascii_unicode_and_utf-8/">【转】字符编码笔记：ASCII，Unicode和UTF-8</link></bibliosource>
+  <author>阮一峰</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.latin_char">
+  <bibliosource><link xl:href="http://zh.wikipedia.org/wiki/%E6%8B%89%E4%B8%81%E5%AD%97%E6%AF%8D">拉丁字母</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.derived_latin_char">
+  <bibliosource><link xl:href="http://zh.wikipedia.org/wiki/%E8%A1%8D%E7%94%9F%E6%8B%89%E4%B8%81%E5%AD%97%E6%AF%8D">衍生拉丁字母</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.baike_ascii">
+  <bibliosource><link xl:href="http://baike.baidu.com/view/15482.htm">ASCII</link></bibliosource>
+  <author>baidu</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.iso_iec_6429">
+  <bibliosource><link xl:href="http://webstore.iec.ch/preview/info_isoiec6429%7Bed3.0%7Den.pdf">ISO/IEC 6429</link></bibliosource>
+  <author>ISO/IEC</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.iso_iec_646">
+  <bibliosource><link xl:href="http://zh.wikipedia.org/wiki/ISO/IEC_646">ISO/IEC 646</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.iso_iec_8859">
+  <bibliosource><link xl:href="http://zh.wikipedia.org/wiki/ISO/IEC_8859">ISO/IEC 8859</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.wiki_ascii">
+  <bibliosource><link xl:href="http://zh.wikipedia.org/wiki/%E5%9B%BD%E6%A0%87%E7%A0%81">国家标准代码</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.wiki_euc">
+  <bibliosource><link xl:href="http://zh.wikipedia.org/wiki/EUC">EUC</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.wiki_ebcdic">
+  <bibliosource><link xl:href="http://zh.wikipedia.org/wiki/EBCDIC">EBCDIC</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.iso_iec_8859_1">
+  <bibliosource><link xl:href="http://zh.wikipedia.org/wiki/ISO/IEC_8859-1">ISO/IEC 8859-1</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.wiki_unicode">
+  <bibliosource><link xl:href="http://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E5%AD%97%E7%AC%A6%E9%9B%86">通用字符集</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.wiki_utf8">
+  <bibliosource><link xl:href="http://en.wikipedia.org/wiki/UTF-8">UTF-8</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.wiki_ansi">
+  <bibliosource><link xl:href="http://en.wikipedia.org/wiki/American_National_Standards_Institute">ANSI</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.wiki_windows_1252">
+  <bibliosource><link xl:href="http://en.wikipedia.org/wiki/Windows-1252">Windows 1252</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.ascii_ansi_utf8">
+  <bibliosource><link xl:href="http://vlaurie.com/computers2/Articles/characters.htm">Cast of Characters- ASCII, ANSI, UTF-8 and all that</link></bibliosource>
+  <author>Victor Laurie</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.ansi_charset_unicode_html">
+  <bibliosource><link xl:href="http://www.alanwood.net/demos/ansi.html">ANSI character set and equivalent Unicode and HTML characters</link></bibliosource>
+  <author>Alan Wood</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.ascii_vs_ansi_encoding">
+  <bibliosource><link xl:href="http://weblogs.asp.net/ahoffman/archive/2004/01/19/60094.aspx">ASCII vs ANSI Encoding</link></bibliosource>
+  <author>Alex Hoffman</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.char_byte_encoding">
+  <bibliosource><link xl:href="http://www.regexlab.com/zh/encoding.htm">字符，字节和编码</link></bibliosource>
+  <author>regexlab</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.ascii_and_ansi">
+  <bibliosource><link xl:href="http://www.sttmedia.com/unicode-ansi"></link>ASCII and ANSI</bibliosource>
+  <author>sttmedia</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.code_page_identifiers">
+  <bibliosource><link xl:href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx">Code Page Identifiers </link></bibliosource>
+  <author>microsoft</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.what_is_unicode_utf8">
+  <bibliosource><link xl:href="http://www.bianceng.cn/web/Html/200710/4839.htm">什么是Unicode？什么是UTF-8？</link></bibliosource>
+  <author>from network</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.wiki_code_pade">
+  <bibliosource><link xl:href="http://en.wikipedia.org/wiki/Code_page">Code Page</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.charset_encode_codepage">
+  <bibliosource><link xl:href="http://zhidao.baidu.com/question/43462968">什么是字符集、编码、代码页（code page）</link></bibliosource>
+  <author>baidu</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.wiki_gbk">
+  <bibliosource><link xl:href="http://zh.wikipedia.org/wiki/GBK">GBK</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.zhcn_encoding">
+  <bibliosource><link xl:href="http://www.satsuns.com/ci/1373.html">中文编码 GB2312||GBK||GB18030||GB13000 详解</link></bibliosource>
+  <author>from network</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.code_pages">
+  <bibliosource><link xl:href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd317752(v=vs.85).aspx">Code Pages</link></bibliosource>
+  <author>microsoft</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.windows_ansi_codepages">
+  <bibliosource><link xl:href="http://msdn.microsoft.com/en-us/goglobal/bb964654">Code Pages Supported by Windows -- Windows Code Pages </link></bibliosource>
+  <author>microsoft</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.windows_oem_codepages">
+  <bibliosource><link xl:href="http://msdn.microsoft.com/en-us/goglobal/bb964655">Code Pages Supported by Windows -- OEM Code Pages </link></bibliosource>
+  <author>microsoft</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.windows_codepages">
+  <bibliosource><link xl:href="http://msdn.microsoft.com/en-us/goglobal/bb964653">Code Pages </link></bibliosource>
+  <author>microsoft</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.wiki_windows_code_page">
+  <bibliosource><link xl:href="http://en.wikipedia.org/wiki/Windows_code_page">Windows code page</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.ms_windows_cp_1252_ansi">
+  <bibliosource><link xl:href="http://www.kostis.net/charsets/cp1252.htm">Microsoft Windows Codepage 1252 (ANSI)</link></bibliosource>
+  <author>kostis</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.wiki_byte_order_mark">
+  <bibliosource><link xl:href="http://en.wikipedia.org/wiki/Byte_order_mark">Byte Order Mark</link></bibliosource>
+  <author>wiki</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.byte_order_mark_bom">
+  <bibliosource><link xl:href="http://www.sttmedia.com/unicode-byteordermark">Byte Order Mark (BOM)</link></bibliosource>
+  <author>sttmedia</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.ascii_control_char">
+  <bibliosource><link xl:href="http://www.crifan.com/the_ascii_character_set_function__control_characters_function__control_code__character_in_ascii/">ASCII字符集中的功能 控制字符</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.common_char_eng_name">
+  <bibliosource><link xl:href="http://www.crifan.com/english_name_for_common_char/">【整理】常见字符的英文读法</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.big_endian_little_endian">
+  <bibliosource><link xl:href="http://www.crifan.com/big_endian_big_endian_and_small_end_little_endian_detailed/">大端(Big Endian)与小端(Little Endian)详解</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.zhcn_charset_unicode_codepage">
+  <bibliosource><link xl:href="http://www.crifan.com/files/doc/docbook/zhcn_charset/release/html/zhcn_charset.html">中文字符编码标准+Unicode+Code Page</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.simple_version_char_intro">
+  <bibliosource><link xl:href="http://www.crifan.com/character_encoding_charset_simpile_tutorial/">字符编码简明教程</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+</bibliography>
